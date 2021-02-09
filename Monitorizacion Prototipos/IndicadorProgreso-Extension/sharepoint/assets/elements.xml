@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{5fc6f6c1-f96a-4f84-b51a-79a8d2fb2c39}"
+            Name="SPFxIndicadorProgreso"
+            DisplayName="Indicador de progreso"
+            Type="Number"
+            Min="0"
+            Required="FALSE"
+            Group="SPFx Columns"
+            ClientSideComponentId="c31cc5ce-388c-4d4f-98c8-c565069b9611">
+    </Field>
+</Elements>

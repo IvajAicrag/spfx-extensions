@@ -1,0 +1,76 @@
+/* 
+    calculo del valor de la columna en milisegundos es una prueba para ver el JSON del calculo se usa en CalculoValorColumna_IndicadorProgreso.json
+    FORMULA DEL CAMPO CALCULADO
+    =IF([Tipo Prototipo]="1A";[Real CPE]+7;IF([Tipo Prototipo]="1B";[Fecha solicitud]+2;IF([Tipo Prototipo]="2A";[Fecha solicitud]+2;IF([Tipo Prototipo]="2B";[Fecha solicitud]+3;""))))
+    1 DIA TIENE 86400000 MILISEGUNDOS
+
+*/
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+    "elmType": "span",
+    "txtContent": 
+      {
+          "operator": "?",
+          "operands": 
+          [
+              {
+                  "operator": "==",
+                  "operands": ["1A","[$TipoPrototipo]"]				
+                  
+              },
+              {
+                  "operator": "+",
+                  "operands": [ 604800000, { "operator": "Number()", "operands": [ "[$RealCPE]" ] } ]
+              },
+              
+                  {
+                      "operator": "?",
+                      "operands": 
+                      [
+                          {
+                              "operator": "==",
+                              "operands": ["1B","[$TipoPrototipo]"]				
+                              
+                          },
+                          {
+                              "operator": "+",
+                              "operands": [ 172800000, { "operator": "Number()", "operands": [ "[$FechaSolicitud]" ] } ]
+                          }, 
+                          
+                              {
+                                  "operator": "?",
+                                  "operands": 
+                                  [
+                                      {
+                                          "operator": "==",
+                                          "operands": ["2A","[$TipoPrototipo]"]				
+                                          
+                                      },
+                                      {
+                                          "operator": "+",
+                                          "operands": [ 172800000, { "operator": "Number()", "operands": [ "[$FechaSolicitud]" ] } ]
+                                      }, 
+                                      
+                                          {
+                                              "operator": "?",
+                                              "operands": 
+                                              [
+                                                  {
+                                                      "operator": "==",
+                                                      "operands": ["2B","[$TipoPrototipo]"]				
+                                                      
+                                                  },
+                                                  {
+                                                      "operator": "+",
+                                                      "operands": [ 259200000, { "operator": "Number()", "operands": [ "[$FechaSolicitud]" ] } ]
+                                                  }, 0
+                                              ]
+                                          }
+                                  ]
+                              }
+                      ]
+                  }
+          ]
+      }
+  }
+  

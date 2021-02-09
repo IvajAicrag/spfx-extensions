@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://gureak365.sharepoint.com/sites/Industrial2/Lists/SeguimientoProyectos/AllItems.aspx",
+      "fieldCustomizers": {
+        "PCero1": {
+          "id": "fd50be45-7bf6-4492-bfc3-e5fc82cc00ee",
+          "properties": {
+            "sampleText": "Value"
+          }
+        },
+        "JPCPruebas": {
+          "id": "bb27132c-e774-45c4-b7f7-62e51815fe5e",
+          "properties": {
+            "sampleText": "Value"
+          }
+        },
+        "StatusProyecto": {
+          "id": "3792e06d-b1c4-43fa-a752-ec2bc4bab735",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+        ,
+        "ProcessPruebas": {
+          "id": "de821535-fe9d-4d22-aa21-f3acbac25d2f",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "pCero1": {
+      "pageUrl": "https://gureak365.sharepoint.com/sites/Industrial2/Lists/SeguimientoProyectos/AllItems.aspx",
+      "fieldCustomizers": {
+        "PCero1": {
+          "id": "fd50be45-7bf6-4492-bfc3-e5fc82cc00ee",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "Jpc": {
+      "pageUrl": "https://gureak365.sharepoint.com/sites/Industrial2/Lists/SeguimientoProyectos/AllItems.aspx",
+      "fieldCustomizers": {
+        "JPCPruebas": {
+          "id": "bb27132c-e774-45c4-b7f7-62e51815fe5e",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "Status": {
+      "pageUrl": "https://gureak365.sharepoint.com/sites/Industrial2/Lists/SeguimientoProyectos/AllItems.aspx",
+      "fieldCustomizers": {
+        "StatusProyecto": {
+          "id": "3792e06d-b1c4-43fa-a752-ec2bc4bab735",
+          "properties": {
+            "sampleText": "Value Status"
+          }
+        }
+      }
+    },
+    "Process": {
+      "pageUrl": "https://gureak365.sharepoint.com/sites/Industrial2/Lists/SeguimientoProyectos/AllItems.aspx",
+      "fieldCustomizers": {
+        "ProcessPruebas": {
+          "id": "de821535-fe9d-4d22-aa21-f3acbac25d2f",
+          "properties": {
+            "sampleText": "Process Value"
+          }
+        }
+      }
+    }
+  }
+}

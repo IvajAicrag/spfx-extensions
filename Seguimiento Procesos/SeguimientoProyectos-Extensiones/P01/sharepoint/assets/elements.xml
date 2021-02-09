@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{8034450e-e59c-42ad-8109-b4249c687da7}"
+            Name="SPFxPCero1"
+            DisplayName="P.01"
+            Type="Text"
+            Required="FALSE"
+            Group="SPFx Indicadores de Seguimiento"
+            ClientSideComponentId="fd50be45-7bf6-4492-bfc3-e5fc82cc00ee">
+    </Field>
+    <Field ID="{1ad6a869-6f94-4867-b42c-3b2c4a7ea410}"
+        Name="SPFxJPC"
+        DisplayName="JPC"
+        Type="Text"
+        Required="FALSE"
+        Group="SPFx Indicadores de Seguimiento"
+        ClientSideComponentId="bb27132c-e774-45c4-b7f7-62e51815fe5e">
+    </Field>
+    <Field ID="{ae0e4e5c-577a-4ba7-9fbb-db36f89c0ab7}"
+        Name="SPFxStatus"
+        DisplayName="Status"
+        Type="Text"
+        Required="FALSE"
+        Group="SPFx Indicadores de Seguimiento"
+        ClientSideComponentId="3792e06d-b1c4-43fa-a752-ec2bc4bab735">
+    </Field>
+     <Field ID="{73d766a3-218b-4849-9027-3d94943f3e66}"
+        Name="SPFxProcess"
+        DisplayName="% Proceso"
+        Type="Text"
+        Required="FALSE"
+        Group="SPFx Indicadores de Seguimiento"
+        ClientSideComponentId="de821535-fe9d-4d22-aa21-f3acbac25d2f">
+    </Field>
+</Elements>
+
+

@@ -1,0 +1,168 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "span",
+  "txtContent": {
+    "operator": "*",
+    "operands": [
+      {
+        "operator": "/",
+        "operands": [
+          {
+            "operator": "-",
+            "operands": [
+              {
+                "operator": "Number()",
+                "operands": [
+                  {
+                    "operator": "?",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          0,
+                          {
+                            "operator": "Number()",
+                            "operands": [
+                              "[$RealTaller]"
+                            ]
+                          }
+                        ]
+                      },
+                      "@now",
+                      "[$RealTaller]"
+                    ]
+                  }
+                ]
+              },
+              {
+                "operator": "Number()",
+                "operands": [
+                  "[$FechaSolicitud]"
+                ]
+              }
+            ]
+          },
+          {
+            "operator": "-",
+            "operands": [
+              {
+                "operator": "Number()",
+                "operands": [
+                  {
+                    "operator": "Date()",
+                    "operands": [
+                      {
+                        "operator": "?",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "1A",
+                              "[$TipoPrototipo]"
+                            ]
+                          },
+                          {
+                            "operator": "+",
+                            "operands": [
+                              604800000,
+                              {
+                                "operator": "Number()",
+                                "operands": [
+                                  "[$RealCPE]"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "operator": "?",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "1B",
+                                  "[$TipoPrototipo]"
+                                ]
+                              },
+                              {
+                                "operator": "+",
+                                "operands": [
+                                  172800000,
+                                  {
+                                    "operator": "Number()",
+                                    "operands": [
+                                      "[$FechaSolicitud]"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "operator": "?",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "2A",
+                                      "[$TipoPrototipo]"
+                                    ]
+                                  },
+                                  {
+                                    "operator": "+",
+                                    "operands": [
+                                      172800000,
+                                      {
+                                        "operator": "Number()",
+                                        "operands": [
+                                          "[$FechaSolicitud]"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "operator": "?",
+                                    "operands": [
+                                      {
+                                        "operator": "==",
+                                        "operands": [
+                                          "2B",
+                                          "[$TipoPrototipo]"
+                                        ]
+                                      },
+                                      {
+                                        "operator": "+",
+                                        "operands": [
+                                          259200000,
+                                          {
+                                            "operator": "Number()",
+                                            "operands": [
+                                              "[$FechaSolicitud]"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      0
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "operator": "Number()",
+                "operands": [
+                  "[$FechaSolicitud]"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      100
+    ]
+  }
+}

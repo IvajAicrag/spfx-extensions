@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Seguimiento-Proyectos-columns-client-side-solution",
+    "id": "78456282-4dce-4a84-bed9-b371c337e2e5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "features": [
+      {
+        "title": "Gureak - Industrial - Seguimiento de proyexto extensión",
+        "description": "Despliega las extensiones de columnas para el seguimiento de proyectos",
+        "id": "b2327cf8-22d9-4516-bc05-be59d6afee68",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/Seguimiento-Proyectos-columns.sppkg"
+  }
+}

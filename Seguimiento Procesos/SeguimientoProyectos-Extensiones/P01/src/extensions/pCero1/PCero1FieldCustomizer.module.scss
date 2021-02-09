@@ -1,0 +1,21 @@
+.PCero1 {
+  .cell {
+    background-color: "[theme:themePrimary, default:#e5e5e5]";
+   }
+
+  .Rounded {
+    height:'25px';
+    height:'25px';
+    border-radius:'50%';
+    display:'inline-block';
+    margin-top:'5px';
+  }
+  .logo {
+    display: block;
+    text-indent: -9999px;
+    width: 100px;
+    height: 82px;
+    background: url(kiwi.svg);
+    background-size: 100px 82px;
+  }
+}

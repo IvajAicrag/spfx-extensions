@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "indicador-progreso-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/indicadorProgreso/IndicadorProgresoFieldCustomizer.js",
+          "manifest": "./src/extensions/indicadorProgreso/IndicadorProgresoFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "IndicadorProgresoFieldCustomizerStrings": "lib/extensions/indicadorProgreso/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,44 @@
+
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "font-size": "30px"
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "height": "25px",
+        "width": "25px",
+        "background-color": "=if(@currentField == '', '', if(@currentField == 'Blanco', '#ffffff', if(@currentField == 'Verde', '#107c10', if(@currentField == 'Rojo', '#e81123', '#000000'))))",
+        "border-radius": "50%"
+      },
+      "attributes": {
+        "title": "@currentField"
+      }
+    }
+  ]
+}
+
+/*{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "font-size": "30px",
+    "margin-top": "7px"
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "color": "=if(@currentField == '', '', if(@currentField == 'Blanco', '#ffffff', if(@currentField == 'Verde', '#107c10', if(@currentField == 'Rojo', '#e81123', '#000000'))))"
+      },
+      "attributes": {
+        "class": "ms-Icon ms-Icon--CircleFill",
+        "aria-hidden": "true",
+        "title": "@currentField"
+      }
+    }
+  ]
+}*/

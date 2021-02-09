@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "p-cero-1-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pCero1/PCero1FieldCustomizer.js",
+          "manifest": "./src/extensions/pCero1/PCero1FieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "jpc-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/jpc/JpcFieldCustomizer.js",
+          "manifest": "./src/extensions/jpc/JpcFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+    ,
+    "status-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/Status/StatusFieldCustomizer.js",
+          "manifest": "./src/extensions/Status/StatusFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+    ,
+    "process-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/Process/ProcessFieldCustomizer.js",
+          "manifest": "./src/extensions/Process/ProcessFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "fabric": "https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css"
+  },
+  "localizedResources": {
+    "PCero1FieldCustomizerStrings": "lib/extensions/pCero1/loc/{locale}.js",
+    "JpcFieldCustomizerStrings": "lib/extensions/jpc/loc/{locale}.js",
+    "StatusFieldCustomizerStrings": "lib/extensions/Status/loc/{locale}.js",
+    "ProcessFieldCustomizerStrings": "lib/extensions/Process/loc/{locale}.js"
+  }
+}
